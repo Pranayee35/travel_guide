@@ -1,0 +1,164 @@
+/* .navbar {
+  background: #fefefe;
+  color: white;
+  padding: 5px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(107, 104, 104);
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #22d3ee;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: #22d3ee
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.auth-btn {
+  padding: 6px 14px;
+  background: linear-gradient(to right, #60a5fa, #22d3ee);
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+}
+
+.auth-btn:hover {
+  opacity: 0.8;
+}
+
+.lang-btn {
+  background: transparent;
+  border: 1px solid white;
+  padding: 6px 10px;
+  color: rgb(107, 104, 104);;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+.navbar {
+  background: #f3f4f6;
+  padding: 8px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+}
+
+
+/* LEFT */
+.navbar-left .logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #22d3ee;
+  text-decoration: none;
+  padding-top: 24px;
+  
+
+}
+
+/* CENTER */
+.navbar-center {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+height: 100%;
+
+}
+
+.navbar-center a {
+  text-decoration: none;
+  color: #444;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-center a:hover {
+  color: #22d3ee;
+}
+
+/* RIGHT */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.lang-btn {
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  color: #444;
+  cursor: pointer;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 160px;
+  z-index: 2000;
+}
+
+.lang-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.lang-option:hover {
+  background: #f3f4f6;
+}
+
+.auth-btn {
+  padding: 8px 16px;
+  background: linear-gradient(to right, #60a5fa, #22d3ee);
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-btn:hover {
+  opacity: 0.9;
+}

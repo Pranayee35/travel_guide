@@ -1,0 +1,46 @@
+import "dotenv/config";
+import express from "express";
+import cors from "cors";
+import cookieParser from "cookie-parser";
+import mongoose from "mongoose";
+import { errorHandler } from "./middleware/errorHandler.js";
+import authRoutes from "./routes/auth.js";
+import userRoutes from "./routes/users.js";
+import regionRoutes from "./routes/regions.js";
+import stateRoutes from "./routes/states.js";
+import destinationRoutes from "./routes/destinations.js";
+import packageRoutes from "./routes/packages.js";
+import bookingRoutes from "./routes/bookings.js";
+import newsletterRoutes from "./routes/newsletter.js";
+
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+app.use(
+  cors({
+    origin: [process.env.FRONTEND_URL, process.env.ADMIN_URL].filter(Boolean),
+    credentials: true,
+  })
+);
+app.use(cookieParser());
+app.use(express.json());
+app.use("/uploads", express.static("uploads"));
+
+app.use("/api/auth", authRoutes);
+app.use("/api/users", userRoutes);
+app.use("/api/regions", regionRoutes);
+app.use("/api/states", stateRoutes);
+app.use("/api/destinations", destinationRoutes);
+app.use("/api/packages", packageRoutes);
+app.use("/api/bookings", bookingRoutes);
+app.use("/api/newsletter", newsletterRoutes);
+
+app.use(errorHandler);
+
+mongoose
+  .connect(process.env.MONGODB_URI || "mongodb://localhost:27017/incredible-india")
+  .then(() => {
+    console.log("MongoDB connected");
+    app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+  })
+  .catch((err) => console.error("MongoDB connection error:", err));

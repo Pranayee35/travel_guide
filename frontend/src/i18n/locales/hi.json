@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "home": "होम",
+    "explore": "अन्वेषण",
+    "map": "नक्शा",
+    "dashboard": "डैशबोर्ड",
+    "login": "लॉग इन",
+    "register": "रजिस्टर",
+    "logout": "लॉग आउट",
+    "bookings": "मेरी बुकिंग",
+    "profile": "प्रोफाइल",
+    "language": "भाषा"
+  },
+  "home": {
+    "heroTitle": "अतुल्य भारत",
+    "heroSubtitle": "विविधता, संस्कृति और विरासत की भूमि की खोज करें",
+    "searchPlaceholder": "गंतव्य खोजें...",
+    "search": "खोजें",
+    "popularDestinations": "लोकप्रिय गंतव्य",
+    "regions": "क्षेत्र",
+    "experiences": "अनुभव",
+    "testimonials": "यात्रियों की राय",
+    "newsletterTitle": "अपडेट रहें",
+    "newsletterSubtitle": "यात्रा टिप्स और ऑफर के लिए सब्सक्राइब करें",
+    "subscribe": "सब्सक्राइब",
+    "emailPlaceholder": "आपका ईमेल"
+  },
+  "explore": {
+    "title": "भारत अन्वेषण",
+    "filterByRegion": "क्षेत्र से फ़िल्टर",
+    "allRegions": "सभी क्षेत्र",
+    "states": "राज्य",
+    "destinations": "गंतव्य",
+    "viewDetails": "विवरण देखें",
+    "noDestinations": "कोई गंतव्य नहीं मिला"
+  },
+  "destination": {
+    "description": "विवरण",
+    "packages": "पैकेज",
+    "bookNow": "अभी बुक करें",
+    "duration": "अवधि",
+    "price": "कीमत",
+    "from": "से",
+    "map": "स्थान"
+  },
+  "booking": {
+    "title": "अपनी यात्रा बुक करें",
+    "step1": "पैकेज चुनें",
+    "step2": "यात्री विवरण",
+    "step3": "भुगतान",
+    "step4": "पुष्टि",
+    "travelers": "यात्री",
+    "addTraveler": "यात्री जोड़ें",
+    "name": "पूरा नाम",
+    "email": "ईमेल",
+    "phone": "फोन",
+    "travelDate": "यात्रा तारीख",
+    "mockPayment": "मॉक भुगतान",
+    "payNow": "अभी भुगतान",
+    "confirmBooking": "बुकिंग पुष्टि",
+    "success": "बुकिंग पुष्टि हो गई!",
+    "bookingId": "बुकिंग आईडी"
+  },
+  "map": {
+    "title": "नक्शे पर अन्वेषण",
+    "filterByCategory": "श्रेणी से फ़िल्टर",
+    "allCategories": "सभी"
+  },
+  "dashboard": {
+    "myBookings": "मेरी बुकिंग",
+    "profile": "प्रोफाइल",
+    "preferredLanguage": "पसंदीदा भाषा",
+    "save": "सहेजें",
+    "noBookings": "अभी तक कोई बुकिंग नहीं",
+    "status": "स्थिति",
+    "paymentStatus": "भुगतान",
+    "dates": "तारीखें"
+  },
+  "auth": {
+    "register": "रजिस्टर",
+    "login": "लॉग इन",
+    "name": "नाम",
+    "email": "ईमेल",
+    "password": "पासवर्ड",
+    "confirmPassword": "पासवर्ड पुष्टि",
+    "googleLogin": "Google से जारी रखें",
+    "alreadyHaveAccount": "पहले से खाता है?",
+    "dontHaveAccount": "खाता नहीं है?"
+  },
+  "common": {
+    "loading": "लोड हो रहा है...",
+    "error": "कुछ गलत हो गया",
+    "back": "वापस",
+    "next": "आगे",
+    "submit": "जमा करें",
+    "cancel": "रद्द"
+  }
+}

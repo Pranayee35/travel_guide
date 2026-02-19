@@ -1,0 +1,119 @@
+.auth-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background Video */
+.background-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* Glass Card */
+.auth-card {
+  position: relative;
+  width: 800px;
+  height: 470px;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  color: white;
+  overflow: hidden;
+  
+}
+
+/* Left Branding */
+.auth-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.auth-left h1 {
+  font-size: 36px;
+}
+
+/* Right Form */
+.auth-right {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.auth-right h2 {
+  margin-bottom: 20px;
+}
+
+.auth-right input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.auth-right input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.auth-right input:focus {
+  outline: none;
+  border-bottom: 2px solid #4cc9f0;
+}
+
+.auth-right button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #4cc9f0, #0077b6);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.auth-right button:hover {
+  opacity: 0.9;
+}
+
+.auth-right p {
+  font-size: 14px;
+}
+
+.auth-right span {
+  color: #4cc9f0;
+  cursor: pointer;
+}
+
+.divider {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.google-btn {
+  background: rgba(255, 255, 255, 0.2);
+}

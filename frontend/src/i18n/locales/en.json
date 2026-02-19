@@ -1,0 +1,98 @@
+{
+  "nav": {
+    "home": "Home",
+    "explore": "Explore",
+    "map": "Map",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "bookings": "My Bookings",
+    "profile": "Profile",
+    "language": "Language"
+  },
+  "home": {
+    "heroTitle": "Incredible India",
+    "heroSubtitle": "Discover the land of diversity, culture and heritage",
+    "searchPlaceholder": "Search destinations...",
+    "search": "Search",
+    "popularDestinations": "Popular Destinations",
+    "regions": "Regions",
+    "experiences": "Experiences",
+    "testimonials": "What Travelers Say",
+    "newsletterTitle": "Stay Updated",
+    "newsletterSubtitle": "Subscribe for travel tips and offers",
+    "subscribe": "Subscribe",
+    "emailPlaceholder": "Your email"
+  },
+  "explore": {
+    "title": "Explore India",
+    "filterByRegion": "Filter by Region",
+    "allRegions": "All Regions",
+    "states": "States",
+    "destinations": "Destinations",
+    "viewDetails": "View Details",
+    "noDestinations": "No destinations found"
+  },
+  "destination": {
+    "description": "Description",
+    "packages": "Packages",
+    "bookNow": "Book Now",
+    "duration": "Duration",
+    "price": "Price",
+    "from": "From",
+    "map": "Location"
+  },
+  "booking": {
+    "title": "Book Your Trip",
+    "step1": "Select Package",
+    "step2": "Traveler Details",
+    "step3": "Payment",
+    "step4": "Confirmation",
+    "travelers": "Travelers",
+    "addTraveler": "Add Traveler",
+    "name": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "travelDate": "Travel Date",
+    "mockPayment": "Mock Payment",
+    "payNow": "Pay Now",
+    "confirmBooking": "Confirm Booking",
+    "success": "Booking confirmed!",
+    "bookingId": "Booking ID"
+  },
+  "map": {
+    "title": "Explore on Map",
+    "filterByCategory": "Filter by category",
+    "allCategories": "All"
+  },
+  "dashboard": {
+    "myBookings": "My Bookings",
+    "profile": "Profile",
+    "preferredLanguage": "Preferred Language",
+    "save": "Save",
+    "noBookings": "No bookings yet",
+    "status": "Status",
+    "paymentStatus": "Payment",
+    "dates": "Dates"
+  },
+  "auth": {
+    "register": "Register",
+    "login": "Login",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "googleLogin": "Continue with Google",
+    "alreadyHaveAccount": "Already have an account?",
+    "dontHaveAccount": "Don't have an account?"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  }
+}
