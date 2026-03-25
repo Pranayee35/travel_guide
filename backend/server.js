@@ -27,14 +27,31 @@ const allowedOrigins = [
 console.log("Allowed origins:", allowedOrigins);
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin:"http://localhost:5173",
     credentials: true,
   })
 );
-app.options("*", cors({
-  origin: allowedOrigins,
-  credentials: true,
-}));
+// app.use(
+//   cors({
+//     origin: function (origin, callback) {
+//       if (!origin) return callback(null, true);
+
+//       if (
+//         origin === "http://localhost:5173" ||
+//         origin === "http://localhost:5174"
+//       ) {
+//         return callback(null, true);
+//       }
+
+//       return callback(new Error("Not allowed by CORS"));
+//     },
+//     credentials: true,
+//   })
+// );
+// app.options("*", cors({
+//   origin: allowedOrigins,
+//   credentials: true,
+// }));
 app.use(cookieParser());
 app.use(express.json());
 app.use("/uploads", express.static("uploads"));
@@ -43,7 +60,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/regions", regionRoutes);
 app.use("/api/states", stateRoutes);
-app.use("/api/destinations", destinationRoutes);
+app.use("/api", destinationRoutes);
 app.use("/api/packages", packageRoutes);
 app.use("/api/bookings", bookingRoutes);
 app.use("/api/newsletter", newsletterRoutes);
