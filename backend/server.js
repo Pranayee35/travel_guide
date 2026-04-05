@@ -14,7 +14,7 @@ import packageRoutes from "./routes/packages.js";
 import bookingRoutes from "./routes/bookings.js";
 import newsletterRoutes from "./routes/newsletter.js";
 import paymentRoutes from "./routes/payments.js";
-
+import adminRoutes from "./routes/admin.js";
 const app = express();
 const PORT = process.env.PORT || 5000;
 console.log("RAZOR KEY:", process.env.RAZORPAY_KEY_ID);
@@ -66,7 +66,7 @@ app.use("/api/bookings", bookingRoutes);
 app.use("/api/newsletter", newsletterRoutes);
 app.use("/uploads", express.static("uploads"));
 app.use("/api/payment", paymentRoutes);
-
+app.use("/api/admin", adminRoutes);
 app.use(errorHandler);
 
 mongoose
